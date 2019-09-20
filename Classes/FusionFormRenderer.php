@@ -3,7 +3,7 @@ namespace Neos\Form\FusionRenderer;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Mvc\Controller\ControllerContext;
-use Neos\Flow\Package\PackageManagerInterface;
+use Neos\Flow\Package\PackageManager;
 use Neos\Form\Core\Model\Renderable\RootRenderableInterface;
 use Neos\Form\Core\Renderer\RendererInterface;
 use Neos\Form\Core\Runtime\FormRuntime;
@@ -36,7 +36,7 @@ class FusionFormRenderer implements RendererInterface
 
     /**
      * @Flow\Inject
-     * @var PackageManagerInterface
+     * @var PackageManager
      */
     protected $packageManager;
 
